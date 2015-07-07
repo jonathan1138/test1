@@ -1,0 +1,61 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: #1E73BE;
+    background-size: cover;
+    text-align: center;
+}
+
+
+h2 {
+    font-weight: 300;
+    font-size: 3vw;
+    padding: 20px 0;
+    color: white;
+}
+
+p {
+    font-size: 3vw;
+    line-height: 1.7em;
+    color: white;
+}
+
+.form-holder {
+    
+    margin-top: 10%;
+    /*
+    background: rgba(255,255,255,0.2);
+    border-radius: 3px;
+    */
+  }
+
+  .form-head {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 30px #000;
+    margin: 15px auto 30px auto;
+  }
+
+  .remember-me {
+    text-align: left;
+  }
+  .ui.checkbox label {
+    color: #ddd;
+  }
+  
+  .ui.button {
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #fcfcfc 2px;
+  text-decoration: none;
+}
