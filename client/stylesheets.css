@@ -1,10 +1,15 @@
 html {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'QuickSand', sans-serif;
 }
 
- body {
-    /* background: #1E73BE; */
-    /* background: url('background2.jpg') fixed; */
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    /*background: #37a2c4;*/
+    background: url('b1.jpg') fixed; 
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -13,9 +18,15 @@ html {
 
 h2 {
     font-weight: 300;
-    font-size: 3vw;
-    padding: 20px 0;
+    font-size: 3.5vw;
     color: white;
+}
+
+h3 {
+  font-weight: 150;
+  font-size: 2vw;
+  padding: 5px 0;
+  color: white
 }
 
 p {
@@ -27,19 +38,10 @@ p {
 .form-holder {
     
     margin-top: 10%;
-    background: rgba(255,255,255,0.2);
-    border-radius: 3px;
+    /* background: rgba(255,255,255,0.2);
+    border-radius: 3px; */
     min-width: 300px;
     
-  }
-
-  .form-head {
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 0 0 30px #000;
-    margin: 15px auto 30px auto;
   }
 
   .remember-me {
@@ -49,15 +51,31 @@ p {
     color: #ddd;
   }
   
-  .ui.button {
+  #loginPageSubmitBtn {
   -webkit-border-radius: 16;
   -moz-border-radius: 16;
   border-radius: 16px;
-  font-family: Arial;
-  color: #0000000;
-  font-size: 22px;
+  font-family: QuickSand;
+  color: #57a0da;
+  font-size: 18px;
   background: #ffffff;
   padding: 10px 20px 10px 20px;
-  border: solid #000000 2px;
+  border: solid #ffffff 1px;
   text-decoration: none;
 }
+
+#loginPageFields {
+  background: rgba(255,255,255,0.5);
+  border: solid #ffffff 1px;
+}
+
+.ui.circular.facebook.button {
+  border: solid #ffffff 1px;
+}
+.ui.circular.google.plus.button {
+  border: solid #ffffff 1px;
+}
+.ui.circular.twitter.button {
+  border: solid #ffffff 1px;
+}
+
