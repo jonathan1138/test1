@@ -1,12 +1,10 @@
 <template name="loginPage">
 
-<div class = "masterLogin">
+    <div class="ui one column center aligned grid" id = "loginCenteredGrid">
 
-    <div class="ui one column center aligned grid">
+      <div class="column eight wide form-holder" id = "loginFormHolder">
 
-      <div class="column eight wide form-holder">
-
-       <h2 class="center aligned header form-head">Sign into <span style = "color:#2C3E50">2Stacks</span></h2>
+       <h2 class="center aligned header form-head">Sign into <span style = "color:#13DD04">2Stacks</span></h2>
 
        <div class="ui inverted divider"></div>
 
@@ -31,11 +29,11 @@
      <div class="ui form">
 
       <div class="field">
-        <input type="text" placeholder="Username or email" id = "loginPageFields">
+        <input type="text" placeholder="Username or email" id = "loginInput">
       </div>
 
       <div class="field">
-        <input type="password" placeholder="Password" id = "loginPageFields">
+        <input type="password" placeholder="Password" id = "loginPassword">
       </div>
 
       <div class="field">
@@ -45,11 +43,19 @@
       <div class="inline field">
         <div class="ui checkbox">
           <input type="checkbox">
-          <label>Remember me</label>
+          <label>Keep me signed in</label>
         </div>
       </div>
     </div>
+
+    <div class="ui inverted divider"></div>
+
+    <div class = "loginReminders">
+
+      <a href = "#" class = "forgotPassword">Forgot Password?</a>-<a href = "#" class = "didntReceiveEmail">Didn't receive activation email?</a>
+
+    </div>
+
   </div>
-</div>
 </div>
 </template>

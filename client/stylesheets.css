@@ -1,90 +1,83 @@
-.text
-{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-.navbar {
-  margin: 0px;
-  padding: 0px;
-}
-
-.masterLogin {
-    /*background: #ffffff;*/
-    height: 100%;
-    padding: 0;
-    margin-top: 10px;
-    font-family: 'QuickSand', sans-serif;
-   /* background: url("towers3.jpg") no-repeat center center fixed; */
-    background: url('towers3.jpg') fixed;
+  /*  * {
+   outline: 1px solid red;
+  }*/
+ 
+  .loginPanel
+  {
+    font-family: 'QuickSand', sans-serif;  
+     background: url("towers3.jpg") no-repeat center center; 
+    /* background: url('towers3.jpg') fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 94%;
+    margin-top: 14px;
+
+ }
+
+  #loginCenteredGrid {
+
+
   }
 
-h2 {
+  #loginFormHolder {
+    margin-top: 20px;
+    min-width: 350px;
+    max-width: 450px;
+ 
+  }
+
+  h2 {
     font-weight: 300;
-    font-size: 3.5vw;
+    font-size: 4vw;
     color: white;
-}
-
-h3 {
-  font-weight: 150;
-  font-size: 2vw;
-  color: white
-}
-
-.2SName {
-  color: #2C3E50;
-}
-
-.form-holder {
-    
-    margin-top: 10%;
-    min-width: 300px;
   }
 
-.remember-me {
-    text-align: left;
+  h3 {
+    font-weight: 150;
+    font-size: 2vw;
+    color: white
   }
 
-.ui.checkbox label {
-    color: #ddd;
+  .2SName {
+    color: #2C3E50;
   }
-  
-  #loginLogo {
-    background: rgba(255,255,255,.5);
+
+  .ui.checkbox label {
+    color: #ffffff;
   }
 
   #loginPageSubmitBtn {
-  text-align: center;
-  border-radius: 16px;
-  color: #fffff;
-  background: #EA6153;
-  padding: 10px 20px 10px 20px;
-  border: solid #ffffff 1px;
-  text-decoration: none;
-  width: 200px;
-}
+    text-align: center;
+    border-radius: 16px;
+    color: #fffff;
+    background: #dc4a38;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+    width: 200px;
+  }
 
-#loginPageFields {
-  background: rgba(255,255,255,.5);
-  border: solid #ffffff 1.5px;
-}
+  #loginInput {
+    background: rgba(255,255,255,.4);
+    border: solid #ffffff 1.5px;
+  }
 
-.ui.circular.facebook.button {
-  border: solid #ffffff 1px;
-  text-align: center;
-}
-.ui.circular.google.plus.button {
-  border: solid #ffffff 1px;
-  text-align: center;
-}
-.ui.circular.twitter.button {
-  border: solid #ffffff 1px;
-  text-align: center;
-}
+
+  #loginPassword {
+    background: rgba(255,255,255,.4);
+    border: solid #ffffff 1.5px;
+  }
+
+  .ui.circular.facebook.button,.ui.circular.google.plus.button, .ui.circular.twitter.button {
+    border: solid #ffffff 1px;
+    text-align: center;
+  }
+ 
+  a.forgotPassword, a.didntReceiveEmail {
+     font-weight: 150;
+    font-size: 2vw;
+    color: white
+  }
 
