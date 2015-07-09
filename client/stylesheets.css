@@ -3,6 +3,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
 .navbar {
   margin: 0px;
   padding: 0px;
@@ -10,15 +13,17 @@
 
 .masterLogin {
     /*background: #ffffff;*/
-    background: url('towers3.jpg');
-    background-attachment: fixed;
-    background-size: cover;
     height: 100%;
     padding: 0;
     margin-top: 10px;
     font-family: 'QuickSand', sans-serif;
+   /* background: url("towers3.jpg") no-repeat center center fixed; */
+    background: url('towers3.jpg') fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-
 
 h2 {
     font-weight: 300;
@@ -29,14 +34,11 @@ h2 {
 h3 {
   font-weight: 150;
   font-size: 2vw;
-  padding: 5px 0;
   color: white
 }
 
-p {
-    font-size: 3vw;
-    line-height: 1.7em;
-    color: white;
+.2SName {
+  color: #2C3E50;
 }
 
 .form-holder {
@@ -45,10 +47,11 @@ p {
     min-width: 300px;
   }
 
-  .remember-me {
+.remember-me {
     text-align: left;
   }
-  .ui.checkbox label {
+
+.ui.checkbox label {
     color: #ddd;
   }
   
