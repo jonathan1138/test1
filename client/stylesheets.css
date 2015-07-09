@@ -1,18 +1,22 @@
-html {
-    font-family: 'QuickSand', sans-serif;
+.text
+{
+    margin-left: auto;
+    margin-right: auto;
 }
-
 .navbar {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-body {
-    /*background: #37a2c4;*/
-    background: url('b1.jpg') fixed; 
+.masterLogin {
+    /*background: #ffffff;*/
+    background: url('towers3.jpg');
+    background-attachment: fixed;
     background-size: cover;
+    height: 100%;
     padding: 0;
-    margin: 0;
+    margin-top: 10px;
+    font-family: 'QuickSand', sans-serif;
   }
 
 
@@ -38,10 +42,7 @@ p {
 .form-holder {
     
     margin-top: 10%;
-    /* background: rgba(255,255,255,0.2);
-    border-radius: 3px; */
     min-width: 300px;
-    
   }
 
   .remember-me {
@@ -51,31 +52,36 @@ p {
     color: #ddd;
   }
   
+  #loginLogo {
+    background: rgba(255,255,255,.5);
+  }
+
   #loginPageSubmitBtn {
-  -webkit-border-radius: 16;
-  -moz-border-radius: 16;
+  text-align: center;
   border-radius: 16px;
-  font-family: QuickSand;
-  color: #57a0da;
-  font-size: 18px;
-  background: #ffffff;
+  color: #fffff;
+  background: #EA6153;
   padding: 10px 20px 10px 20px;
   border: solid #ffffff 1px;
   text-decoration: none;
+  width: 200px;
 }
 
 #loginPageFields {
-  background: rgba(255,255,255,0.5);
-  border: solid #ffffff 1px;
+  background: rgba(255,255,255,.5);
+  border: solid #ffffff 1.5px;
 }
 
 .ui.circular.facebook.button {
   border: solid #ffffff 1px;
+  text-align: center;
 }
 .ui.circular.google.plus.button {
   border: solid #ffffff 1px;
+  text-align: center;
 }
 .ui.circular.twitter.button {
   border: solid #ffffff 1px;
+  text-align: center;
 }
 
