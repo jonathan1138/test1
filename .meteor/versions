@@ -48,6 +48,7 @@ routepolicy@1.0.5
 semantic:ui@2.0.2
 semantic:ui-data@2.0.2
 session@1.1.0
+sewdn:sly@0.1.1
 spacebars@1.0.6
 spacebars-compiler@1.0.6
 templating@1.1.1
