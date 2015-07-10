@@ -1,6 +1,10 @@
   /*  * {
    outline: 1px solid red;
   }*/
+
+  #menu {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
  
   .loginPanel
   {

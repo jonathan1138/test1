@@ -9,3 +9,5 @@ autopublish
 insecure
 semantic:ui
 flemay:less-autoprefixer
+neo:reveal-js
+iron:router
