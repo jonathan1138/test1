@@ -1,5 +1,6 @@
 Template.transitionSelect.events({
     'click .item': function(event) {
+      console.log("here");
       var transition;
       transition = $(event.currentTarget).data('value');
       return Reveal.configure({
@@ -8,12 +9,3 @@ Template.transitionSelect.events({
     }
   });
 
-  Template.themeSelect.events({
-    'click .item': function(event) {
-      var theme;
-      theme = $(event.currentTarget).data('value');
-      return Reveal.configure({
-        theme: theme
-      });
-    }
-  });
