@@ -8,8 +8,6 @@ Template.transitionSelect.events({
     }
   });
 
-
-
   Template.themeSelect.events({
     'click .item': function(event) {
       var theme;

@@ -1,11 +1,11 @@
- Template.reveal.rendered = function() {
+ Template.introReveal.rendered = function() {
     Reveal.initialize();
     Reveal.configure({controls: false});
     return Reveal.slide();
   };
 
+/*
   Reveal.initialize({
-
     // Display controls in the bottom right corner
     controls: false,
 
@@ -88,3 +88,5 @@
     parallaxBackgroundVertical: ''
 
 });
+
+*/

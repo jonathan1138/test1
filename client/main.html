@@ -12,14 +12,8 @@
 <template name="main">
 	
 	{{> menu}}
+	{{> yield}}
 
-	{{ #if creating}}
-		{{> reveal}}
-	{{else}}
-		<div class = "loginPanel">
-  		{{> loginPage}}
-  		</div>
-	{{/if}}
 
 </template>
 
