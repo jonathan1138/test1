@@ -1,19 +1,27 @@
-<!--
-
 <head>
-  <title>Test</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Big Bag Of Stuff</title>
+	<meta name="description" content="All the soups and nuts">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="/packages/reveal-js/reveal.js/css/theme/default.css" id="theme"/>
+	 <link rel="stylesheet" href="/packages/neo_reveal-js/reveal.js/css/theme/sky.css" id="theme"/>
 </head>
 
-<body>
-   <div class = "navBarBody">
-  		{{> header}}	
-  	</div>
+<body></body>
 
-   <div class = "loginPanel">
+<template name="main">
+	
+	{{> menu}}
+
+	{{ #if creating}}
+		{{> reveal}}
+	{{else}}
+		<div class = "loginPanel">
   		{{> loginPage}}
-  	</div>
+  		</div>
+	{{/if}}
 
-</body>
+</template>
 
--->
+
+

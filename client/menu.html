@@ -1,0 +1,11 @@
+<template name="menu">
+	<div class="ui menu example" id="menu">
+		<a class="item" href="{{pathFor 'home'}}">Home</a>
+		<a class="item" href="{{pathFor 'barebones'}}">Barebones</a>
+		<div class="ui primary button" id = "signUp">Sign up</div>
+		<div class="right menu">
+			{{> transitionSelect}}
+			{{> themeSelect}}
+		</div>
+	</div>
+</template>
