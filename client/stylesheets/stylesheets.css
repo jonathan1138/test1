@@ -1,15 +1,88 @@
   /*  * {
    outline: 1px solid red;
   }*/
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100);
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+  /* Full reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html,
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+}
+@media (min-width: 37.5em) {
+  html,
+  body {
+    font-size: 100%;
+  }
+}
+
+html { -webkit-font-smoothing: antialiased; }
+
+
+*/
 
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 /* Retina Display Media Query */
 @media only screen and (min-width: 320px) {
   /* Small screen, non-retina */
 }
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
 only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
@@ -190,14 +263,9 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
 
 
 /* For the LogIn Screen */
-
-  #menu {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
  
   .loginPanel
-  {
-    font-family: 'QuickSand', sans-serif;  
+  { 
      background: url("towers3.jpg") no-repeat center center; 
     /* background: url('towers3.jpg') fixed; */
     -webkit-background-size: cover;
@@ -234,7 +302,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
   }
 
   .2SName {
-    color: #2C3E50;
+    color: #E55D02;
   }
 
   .ui.checkbox label {
@@ -275,6 +343,14 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
   }
 
 /* Phone A */
+
+.stackDemoContainer {
+  background-color: ##E74C3C;
+}
+
+.outerStackDemo {
+
+}
 
 .aPhone {
   position: relative;
@@ -593,6 +669,14 @@ a:hover {
 
 /* Phone B */
 
+#msgDemoContainer {
+  background-color: #2C3E50;
+}
+
+.outerMsgDemo {
+
+}
+
 *,
 *:before,
 *:after {
@@ -827,9 +911,19 @@ a:hover {
 
 /* Stacks */
 
+#loadingContainer {
+
+}
+
+#loadingRingerRow {
+
+}
+
+.loadingScreen {
+
+}
 .stackBody {
-  background-color: #0099ff;
-  color: #0099ff;
+
 }
 
 .stackCard {
@@ -838,47 +932,46 @@ a:hover {
   top: 50%;
   margin-left: -100px;
   margin-top: -150px;
-  width: 200px;
-  height: 300px;
-  border: 10px solid #0099ff;
-  border-radius: 30px;
-  background: #111;
-  outline: #111 solid 20px;
+  width: 100px;
+  height: 150px;
+  border: 10px solid #000000;
+  border-radius: 10px;
+  background: #333;
+  outline: #444 solid 20px;
   transform: rotateZ(-15deg) rotateY(45deg) rotateX(60deg);
   opacity: 0;
 }
 
 #stackHeader {
   display: inline-block;
-  width: 300px;
+  width: 150px;
   margin-top: 25%;
   margin-left: -25%;
   transform: rotate(90deg);
-  font-size: 70px;
+  font-size: 35px;
   text-align: center;
   line-height: 200px;
-  font-family: 'Helvetica';
   color: white;
 }
 
 .stackCard:nth-of-type(1) {
   margin-top: -150px;
-  animation: card_fade_1 4s ease infinite;
+  animation: card_fade_1 7s ease infinite;
 }
 
 .stackCard:nth-of-type(2) {
   margin-top: -170px;
-  animation: card_fade_2 4s ease infinite;
+  animation: card_fade_2 7s ease infinite;
 }
 
 .stackCard:nth-of-type(3) {
   margin-top: -190px;
-  animation: card_fade_3 4s ease infinite;
+  animation: card_fade_3 7s ease infinite;
 }
 
 .stackCard:nth-of-type(4) {
   margin-top: -210px;
-  animation: card_fade_4 4s ease infinite;
+  animation: card_fade_4 7s ease infinite;
 }
 
 @keyframes card_fade_1 {
@@ -886,7 +979,7 @@ a:hover {
     opacity: 0;
   }
   20% {
-    opacity: 1;
+    opacity: 2;
   }
 }
 @keyframes card_fade_2 {
@@ -894,7 +987,7 @@ a:hover {
     opacity: 0;
   }
   40% {
-    opacity: 1;
+    opacity: 2;
   }
 }
 @keyframes card_fade_3 {
@@ -902,7 +995,7 @@ a:hover {
     opacity: 0;
   }
   60% {
-    opacity: 1;
+    opacity: 2;
   }
 }
 @keyframes card_fade_4 {
@@ -910,147 +1003,114 @@ a:hover {
     opacity: 0;
   }
   80% {
-    opacity: 1;
+    opacity: 2;
   }
 }
 
 /* Next Play 3 */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,900);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+#introContainer {
+  background-color: #0099ff;
 }
 
-html {
-  line-height: 1;
+#ringerRow {
+  height: 3.5em;
 }
 
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+.outerIntro {
   display: block;
-}
-
-html,
-body {
-  font-family: "Lato", sans-serif;
-  font-size: 90%;
-  height: 100%;
-  width: 100%;
-}
-@media (min-width: 37.5em) {
-  html,
-  body {
-    font-size: 100%;
-  }
-}
-
-.section {
-  background: #0099ff;
-  display: table;
   height: 100%;
   min-height: 43.75em;
   position: relative;
   width: 100%;
+  margin-top: -2em;
 }
 @media (max-height: 40em) {
-  .section {
+  .outerIntro {
     display: block;
-    padding-top: 4em;
+    
   }
 }
-.section__wrap {
-  display: table-cell;
+.innerIntro {
+  display: block;
   vertical-align: middle;
   width: 100%;
 }
 @media (max-height: 40em) {
-  .section__wrap {
+  .innerIntro {
     display: block;
   }
 }
-.section h1 {
-  color: #fff;
-  font-size: 1.8em;
+
+h1#introHeader {
+  color: #ffffff;
+  font-size: 2.5em;
   font-weight: 300;
-  margin: 1em auto .5em;
+  margin: .3em auto .5em;
   text-align: center;
 }
 @media (min-width: 37.5em) {
-  .section h1 {
-    font-size: 2em;
+  h1#introHeader {
+    font-size: 3em;
   }
 }
 
-p {
-  color: #c92210;
-  font-size: .75em;
+h1#introDescribe {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: .3em auto .5em;
   text-align: center;
-  transform: translateY(4em);
+  width: 472px;
+
 }
-p a {
-  color: #c92210;
+@media (min-width: 37.5em) {
+  h1#introDescribe {
+    font-size: 1.3em;
+  }
 }
 
-.center {
+#introIcon {
+  font-size: 1.2em;
+  font-style: bold;
+}
+
+#introPot {
+  font-style: bold;
+  font-size: 1.27em;
+}
+
+p#introGo {
+  color: #004B49;
+  font-size: 1.15em;
+  font-weight: 100;
+  text-align: center;
+  padding: .2em;
+}
+p a#introGo {
+  color: #004B49;
+}
+
+
+
+.introCenter {
   background: #fff;
   border-radius: 50%;
   height: 22em;
-  margin: 1em auto;
+  margin: .5em auto;
   overflow: hidden;
   position: relative;
   width: 22em;
+  margin-top: -10px;
 }
 
-.part {
+.introPart {
   position: absolute;
   border: 0 solid transparent;
 }
 
-.part-1 {
-  background: #1c699d;
+.introPart-1 {
+  background: #191970;
   left: 50%;
   transform: translateX(-50%);
   z-index: 15;
@@ -1058,7 +1118,7 @@ p a {
   animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
 }
 
-.part-2 {
+.introPart-2 {
   background: #fff;
   border-radius: 0.25em;
   display: table;
@@ -1069,8 +1129,8 @@ p a {
   animation: part2 5s infinite;
   animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
 }
-.part-2 span {
-  color: #3498DB;
+.introPart-2 span {
+  color: #E55D02;
   display: table-cell;
   font-weight: 700;
   vertical-align: middle;
@@ -1078,7 +1138,7 @@ p a {
   animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
 }
 
-.part-3 {
+.introPart-3 {
   background: #3498DB;
   border-radius: 0.625em;
   left: 50%;
@@ -1204,42 +1264,42 @@ p a {
 }
 @-moz-keyframes part2 {
   0%, 5% {
-    border: 0.25em solid #3498DB;
+    border: 0.25em solid #E55D02;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
     width: 3.125em;
   }
   15%, 25% {
-    border: 0 solid #3498DB;
+    border: 0 solid #E55D02;
     border-radius: 0.5em;
     height: 8.125em;
     top: 6.0625em;
     width: 4.75em;
   }
   35%, 45% {
-    border: 0 solid #3498DB;
+    border: 0 solid #E55D02;
     border-radius: 0.5em;
     height: 11.25em;
     top: 4.6875em;
     width: 6.875em;
   }
   55%, 65% {
-    border: 0 solid #3498DB;
+    border: 0 solid #E55D02;
     border-radius: 0.5em;
     height: 8.125em;
     top: 5.9375em;
     width: 13.5em;
   }
   75%, 85% {
-    border: 0 solid #3498DB;
+    border: 0 solid #E55D02;
     border-radius: 0.5em;
     height: 9.375em;
     top: 5.9375em;
     width: 15em;
   }
   95%, 100% {
-    border: 0.25em solid #3498DB;
+    border: 0.25em solid #E55D02;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
@@ -1248,42 +1308,42 @@ p a {
 }
 @-webkit-keyframes part2 {
   0%, 5% {
-    border: 0.25em solid #3498DB;
+    border: 0.25em solid #E55D02;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
     width: 3.125em;
   }
   15%, 25% {
-    border: 0 solid #3498DB;
+    border: 0 solid #E55D02;
     border-radius: 0.5em;
     height: 8.125em;
     top: 6.0625em;
     width: 4.75em;
   }
   35%, 45% {
-    border: 0 solid #3498DB;
+    border: 0 solid #E55D02;
     border-radius: 0.5em;
     height: 11.25em;
     top: 4.6875em;
     width: 6.875em;
   }
   55%, 65% {
-    border: 0 solid #3498DB;
+    border: 0 solid #E55D02;
     border-radius: 0.5em;
     height: 8.125em;
     top: 5.9375em;
     width: 13.5em;
   }
   75%, 85% {
-    border: 0 solid #3498DB;
+    border: 0 solid #E55D02;
     border-radius: 0.5em;
     height: 9.375em;
     top: 5.9375em;
     width: 15em;
   }
   95%, 100% {
-    border: 0.25em solid #3498DB;
+    border: 0.25em solid #E55D02;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
@@ -1292,14 +1352,14 @@ p a {
 }
 @keyframes part2 {
   0%, 5% {
-    border: 0.25em solid #3498DB;
+    border: 0.25em solid #3498db;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
     width: 3.125em;
   }
   15%, 25% {
-    border: 0 solid #3498DB;
+    border: 0 solid #3498db;
     border-radius: 0.5em;
     height: 8.125em;
     top: 6.0625em;
