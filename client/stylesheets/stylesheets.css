@@ -2,7 +2,18 @@
    outline: 1px solid red;
   }*/
 
+/*Colors 
+
+darkgrey - #2c3e50
+orange - #e74c3c
+teal - #19bc9c
+  
+*/
+
+
   /* Full reset */
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1569,4 +1580,365 @@ p a#introGo {
   }
 }
 
+/* Next 4 */
 
+#aIntroContainer {
+  background-color: #0099ff;
+}
+
+#aRingerRow {
+  height: 3.5em;
+}
+
+.aOuterIntro {
+  display: block;
+  height: 100%;
+  min-height: 43.75em;
+  position: relative;
+  width: 100%;
+  margin-top: -2em;
+}
+@media (max-height: 40em) {
+  .aOuterIntro {
+    display: block;
+    
+  }
+}
+.aInnerIntro {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (max-height: 40em) {
+  .aInnerIntro {
+    display: block;
+  }
+}
+
+h1#aIntroHeader {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: .3em auto .5em;
+  text-align: center;
+}
+@media (min-width: 37.5em) {
+  h1#aIntroHeader {
+    font-size: 3em;
+  }
+}
+
+h1#aIntroDescribe {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: .3em auto .5em;
+  text-align: center;
+  width: 472px;
+
+}
+@media (min-width: 37.5em) {
+  h1#aIntroDescribe {
+    font-size: 1.3em;
+  }
+}
+
+#aIntroIcon {
+  font-size: 1.2em;
+  font-style: bold;
+}
+
+#aIntroPot {
+  font-style: bold;
+  font-size: 1.27em;
+}
+
+p#aIntroGo {
+  color: #004B49;
+  font-size: 1.15em;
+  font-weight: 100;
+  text-align: center;
+  padding: .2em;
+}
+p a#aIntroGo {
+  color: #004B49;
+}
+
+
+.aIntroCenter {
+  background: #fff;
+  border-radius: 50%;
+  height: 22em;
+  margin: .5em auto;
+  overflow: hidden;
+  position: relative;
+  width: 22em;
+  margin-top: -10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5);
+   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5); 
+}
+
+.aIntroPart {
+  position: absolute;
+  border: 0 solid transparent;
+}
+
+.aIntroPart-1 {
+  background: #191970;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  animation: aPart1 9s infinite;
+  animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+.aIntroPart-2 {
+  background: #fff;
+  border-radius: 0.25em;
+  display: table;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: aPart2 9s infinite;
+  animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+.aIntroPart-2 span {
+  color: #E55D02;
+  display: table-cell;
+  font-weight: 700;
+  vertical-align: middle;
+  animation: aCode 9s infinite;
+  animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+.aIntroPart-3 {
+  background: #3498DB;
+  border-radius: 0.625em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  animation: aPart3 9s infinite ;
+  animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+@keyframes aPart1 {
+  0%, 5% {
+    border-radius: 0;
+    height: 0.3125em;
+    top: 13em;
+    width: 1.5625em;
+  }
+  15%, 20% {
+    border-radius: 3.75em;
+    height: 1.5em;
+    top: 14.875em;
+    width: 1.5em;
+  }
+  25%, 30% {
+    border-radius: 3.75em;
+    height: 1.5em;
+    top: 16.5625em;
+    width: 1.5em;
+  }
+  35%, 40% {
+    border-radius: 6.25em;
+    height: 1.25em;
+    top: 15.625em;
+    width: 15.625em;
+  }
+  45%, 50% {
+    border-radius: 6.25em;
+    height: 1.25em;
+    top: 17.1875em;
+    width: 5.625em;
+  }
+  55%, 60% {
+    border-radius: 3.75em;
+    height: 1.5em;
+    top: 16.5625em;
+    width: 1.5em;
+  }
+  70%, 75% {
+    border-radius: 0em;
+    height: 0em;
+    top: 0em;
+    width: 0em;
+  }
+  80%, 90% {
+
+  }
+  95%, 100%{
+ border-radius: 0;
+    height: 0.3125em;
+    top: 13em;
+    width: 1.5625em;
+  }
+}
+
+@keyframes aPart2 {
+  0%, 5% {
+    border: 0.25em solid #3498db;
+    border-radius: 0.5em;
+    height: 3.125em;
+    top: 9.375em;
+    width: 3.125em;
+  }
+  15%, 20% {
+    border: 0 solid #3498db;
+    border-radius: 0.5em;
+    height: 8.125em;
+    top: 6.0625em;
+    width: 4.75em;
+  }
+  25%, 30% {
+    border: 0 solid #3498DB;
+    border-radius: 0.5em;
+    height: 11.25em;
+    top: 4.6875em;
+    width: 6.875em;
+  }
+  35%, 40% {
+    border: 0 solid #3498DB;
+    border-radius: 0.5em;
+    height: 8.125em;
+    top: 5.9375em;
+    width: 13.5em;
+  }
+  45%, 50% {
+    border: 0 solid #3498DB;
+    border-radius: 0.5em;
+    height: 9.375em;
+    top: 5.9375em;
+    width: 15em;
+  }
+  55%, 60% {
+    border: 0 solid #3498DB;
+    border-radius: 0.5em;
+    height: 11.25em;
+    top: 4.6875em;
+    width: 6.875em;
+  }
+  70%, 75% {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-radius: 0.0em;
+    height: 11em;
+    top: 6em;
+    width: 4.2em;
+  }
+  80%, 90% {
+
+  }
+  95%, 100%{
+       border: 0.25em solid #3498db;
+    border-radius: 0.5em;
+    height: 3.125em;
+    top: 9.375em;
+    width: 3.125em;
+  }
+}
+
+@keyframes aPart3 {
+  0%, 5% {
+    border-radius: 0.3125em;
+    height: 9.375em;
+    top: 6.4375em;
+    width: 2.5em;
+  }
+  15%, 20% {
+    border-radius: 0.625em;
+    height: 11.875em;
+    top: 5em;
+    width: 6.625em;
+    border: 1px solid #ffffff;
+  }
+  25%, 30% {
+    border-radius: 0.625em;
+    height: 15em;
+    top: 3.75em;
+    width: 8.75em;
+    border: 1px solid #ffffff;
+  }
+  35%, 40% {
+    border-radius: 0.625em;
+    height: 10em;
+    top: 5em;
+    width: 15em;
+    border: 1px solid #ffffff;
+  }
+  45%, 50% {
+    border-radius: 0.625em;
+    height: 11.25em;
+    top: 5em;
+    width: 16.875em;
+    border: 1px solid #ffffff;
+  }
+  55%, 60% {
+    border-radius: 0.625em;
+    height: 15em;
+    top: 3.75em;
+    width: 8.75em;
+    border: 1px solid #ffffff;
+  }
+  70%, 75% {
+    border-radius: 0em;
+    height: 11em;
+    top: 6em;
+    width: 16em;
+    border: 1px solid #000000;
+  }
+  80%, 90% {
+
+  }
+  95%, 100%{
+    border-radius: 0.3125em;
+    height: 9.375em;
+    top: 6.4375em;
+    width: 2.5em;
+  }
+}
+
+@keyframes aCode {
+  0%, 5% {
+    font-size: 1em;
+    color: #E55D02;
+  }
+  15%, 20% {
+    font-size: 1.5625em;
+    color: #E55D02;
+  }
+  25%, 30% {
+    font-size: 2.1875em;
+    color: #E55D02;
+  }
+  35%, 40% {
+    font-size: 2.8125em;
+    color: #E55D02;
+  }
+  45%, 50% {
+    font-size: 3.4375em;
+    color: #E55D02;
+  }
+  55%, 60% {
+    font-size: 2.1875em;
+    color: #E55D02;
+  }
+  70%, 75% {
+    color: #ffffff;
+  }
+   80%, 90% {
+
+  }
+  95%, 100%{
+     font-size: 1em;
+    color: #E55D02;
+  }
+}
+
+div.image1 {
+  content:url('/miniCons/android.png');
+  margin: 0 auto;
+  padding: 0;
+}
