@@ -1796,5 +1796,69 @@ div.cuteBot {
  }
 }
 
-
 /* Next 4 */
+
+/* Main Body */
+.bubbleTxt {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(40deg);
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.3s;
+}
+
+/* Right Arrow / Pointer */
+.bubbleTxt:before {
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 30px 37.5px;
+  position: absolute;
+  right: -36.58536585px;
+  top: 120px;
+  transition: 0.3s;
+}
+
+/*Left Side Cap */
+.bubbleTxt:after {
+  background-color: rgba(255, 255, 255, 0.4);
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 30px;
+  height: 300px;
+  transform-origin: right center;
+  transform: rotateY(-90deg);
+}
+
+/* Header */
+
+.bubbleTxt h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  margin: .5em;
+}
+
+/* Paragraph */
+
+.bubbleTxt p {
+  margin: 1em;
+  line-height: 120%;
+}
+
+body {
+  background-color: @mBlack;
+  background-size: cover;
+  perspective: 1200px;
+}
+
