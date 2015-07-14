@@ -1112,8 +1112,6 @@ p a#aIntroGo {
   position: relative;
   width: 22em;
   margin-top: -10px;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5); 
 }
 
@@ -1125,8 +1123,12 @@ p a#aIntroGo {
 .aIntroPart-1 {
   background: #191970;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 15;
+  -webkit-animation: aPart1 9s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
+
   animation: aPart1 9s infinite;
   animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
 }
@@ -1137,8 +1139,12 @@ p a#aIntroGo {
   display: table;
   left: 50%;
   text-align: center;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 10;
+  -webkit-animation: aPart2 9s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
+
   animation: aPart2 9s infinite;
   animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
 }
@@ -1147,6 +1153,9 @@ p a#aIntroGo {
   display: table-cell;
   font-weight: 700;
   vertical-align: middle;
+  -webkit-animation: aCode 9s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
+
   animation: aCode 9s infinite;
   animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
 }
@@ -1155,8 +1164,12 @@ p a#aIntroGo {
   background: #3498DB;
   border-radius: 0.625em;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 9;
+  -webkit-animation: aPart3 9s infinite ;
+  -webkit-animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
+
   animation: aPart3 9s infinite ;
   animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
 }
@@ -1558,8 +1571,6 @@ div.cuteBot {
     width: 16em;
     border: 1px solid #000000;
     background-color: #E55D02;
-    -webkit-box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
-    -moz-box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
     box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
   }
   95%, 100%{
@@ -1629,8 +1640,6 @@ div.cuteBot {
     width: 16em;
     border: 1px solid #000000;
     background-color: #E55D02;
-    -webkit-box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
-    -moz-box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
     box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
   }
   95%, 100%{
@@ -1700,8 +1709,6 @@ div.cuteBot {
     width: 16em;
     border: 1px solid #000000;
     background-color: #E55D02;
-    -webkit-box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
-    -moz-box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
     box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
   }
   95%, 100%{
