@@ -2,18 +2,14 @@
    outline: 1px solid red;
    }*/
 
-/*Colors 
-
-darkgrey - #2c3e50
-orange - #e74c3c
-teal - #19bc9c
-  
-*/
-
+@import "themeColors.import.less";
+@import "fonts.import.less";
+@import "mediaScreenSetups.import.less";
+@import "fullReset.import.less";
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+@import url(http://fonts.googleapis.com/css?family=Raleway|Open);
 
 /* Full reset */
-
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,46 +28,24 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  font-size: 100%;
   vertical-align: baseline;
+}
+ol, ul {list-style: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;vertical-align: middle;}
+q, blockquote {quotes: none;}
+q:before, q:after, blockquote:before, blockquote:after {content: "";content: none;}
+a img {border: none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display: block;}
 
-}
+/* Reset Over */
 
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+/* Font Setup */
 
 html,
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
+  /* font-family: "Raleway, HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+  font-family: 'Raleway', sans-serif;
   height: 100%;
   width: 100%;
   line-height: 1;
@@ -79,59 +53,57 @@ body {
 @media (min-width: 37.5em) {
   html,
   body {
-    font-size: 100%;
   }
 }
 
 html { -webkit-font-smoothing: antialiased; }
 
 
-*/
-
-@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
-/* Retina Display Media Query */
-@media only screen and (min-width: 320px) {
-  /* Small screen, non-retina */
+h1 {
+  font-family: Raleway;
+  font-size: 3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
 }
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (                min-resolution: 192dpi) and (min-width: 320px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
-  /* Small screen, retina, stuff to override above media query */
-}
-
-@media only screen and (min-width: 700px) {
-  /* Medium screen, non-retina */
-}
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
-only screen and (                min-resolution: 192dpi) and (min-width: 700px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 700px) { 
-  /* Medium screen, retina, stuff to override above media query */
-}
-
-@media only screen and (min-width: 1300px) {
-  /* Large screen, non-retina */
-}
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
-only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
-
-  /* Large screen, retina, stuff to override above media query */
+h2 {
+  font-family: Raleway;
+  font-size: 2em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
 
 }
+h3 {
+  font-family: Raleway;
+  font-size: 1.7em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+p {
+  font-family: Raleway;
+  font-size: 1.3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+blockquote {
+  font-family: Raleway;
+  font-size: 2.1em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+pre {
+  font-family: Raleway;
+  font-size: 1.3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+/* End Font Setup */
 
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
   text-shadow: @string;
@@ -272,16 +244,12 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
   -o-transform-origin:      @x @y;
 }
 
-
 /* For the LogIn Screen */
 
 .loginPanel
 { 
  background: url("towers3.jpg") no-repeat center center; 
  /* background: url('towers3.jpg') fixed; */
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
  background-size: cover;
  height: 94%;
  margin-top: 14px;
@@ -296,20 +264,18 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
 #loginFormHolder {
   margin-top: 20px;
   min-width: 350px;
-  max-width: 450px;
+  max-width: 500px;
 
 }
 
-h2 #loginH2 {
-  font-weight: 300;
-  font-size: 4vw;
-  color: white;
+#loginH2 {
+   color: @white;
 }
 
-h3 #loginH3 {
-  font-weight: 150;
-  font-size: 2vw;
-  color: white
+#loginH3 {
+  color: @white;
+  padding: .5em;
+  max-width: 100%;
 }
 
 .2SName {
@@ -348,19 +314,21 @@ h3 #loginH3 {
 }
 
 a.forgotPassword, a.didntReceiveEmail {
- font-weight: 150;
- font-size: 2vw;
  color: white
 }
 
 /* Phone A */
 
-.stackDemoContainer {
-  background-color: ##E74C3C;
+#stackDemoContainer {
+  background-color: #000000;
 }
 
 .outerStackDemo {
 
+}
+
+#stackRingerRow {
+  margin-top: 6em;
 }
 
 .aPhone {
@@ -1021,7 +989,7 @@ a:hover {
 /* Next Play 3 */
 
 #aIntroContainer {
-  background-color: #0099ff;
+  background-color: @mBlue;
 }
 
 #aRingerRow {
@@ -1055,7 +1023,7 @@ a:hover {
 
 h1#aIntroHeader {
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 2.75em;
   font-weight: 300;
   margin: .3em auto .5em;
   text-align: center;
@@ -1066,15 +1034,24 @@ h1#aIntroHeader {
   }
 }
 
-h1#aIntroDescribe {
+h1#aIntroDescribe1 {
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 300;
+  margin: .9em auto .65em;
+  text-align: center;
+}
+
+h1#aIntroDescribe2 {
   color: #ffffff;
   font-size: 1.3em;
   font-weight: 300;
   margin: .3em auto .5em;
+  margin-top: .5em;
   text-align: center;
-  width: 472px;
-
 }
+
+
 @media (min-width: 37.5em) {
   h1#aIntroDescribe {
     font-size: 1.3em;
@@ -1381,7 +1358,7 @@ div.cuteBot {
     border-right: 1px solid #000000;
     border-radius: 0.0em;
     height: 12em;
-    top: 5.60em;
+    top: 5.65em;
     width: 4.2em;
   }
   95%, 100%{
