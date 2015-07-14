@@ -269,21 +269,21 @@ pre {
 }
 
 #loginH2 {
-   color: @white;
+   color: @mWhite;
 }
 
 #loginH3 {
-  color: @white;
+  color: @mWhite;
   padding: .5em;
   max-width: 100%;
 }
 
 .2SName {
-  color: #E55D02;
+  color: @mRorange;
 }
 
 .ui.checkbox label {
-  color: #ffffff;
+  color: @mWhite;
 }
 
 #loginPageSubmitBtn {
@@ -292,24 +292,24 @@ pre {
   color: #fffff;
   background: #dc4a38;
   padding: 10px 20px 10px 20px;
-  border: solid #ffffff 1px;
+  border: solid @mWhite 1px;
   text-decoration: none;
   width: 200px;
 }
 
 #loginInput {
   background: rgba(255,255,255,.4);
-  border: solid #ffffff 1.5px;
+  border: solid @mWhite 1.5px;
 }
 
 
 #loginPassword {
   background: rgba(255,255,255,.4);
-  border: solid #ffffff 1.5px;
+  border: solid @mWhite 1.5px;
 }
 
 .ui.circular.facebook.button,.ui.circular.google.plus.button, .ui.circular.twitter.button {
-  border: solid #ffffff 1px;
+  border: solid @mWhite 1px;
   text-align: center;
 }
 
@@ -320,7 +320,7 @@ a.forgotPassword, a.didntReceiveEmail {
 /* Phone A */
 
 #stackDemoContainer {
-  background-color: #000000;
+  background-color: @mBlack;
 }
 
 .outerStackDemo {
@@ -357,7 +357,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 9px;
   width: 45px;
   border-radius: 30px;
-  background-color: #ffffff;
+  background-color: @mWhite;
   margin-top: 7%;
   margin-left: 38.5%;
   display: inline-block;
@@ -369,7 +369,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 9px;
   width: 9px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: @mWhite;
   margin-top: 7%;
   margin-left: 12%;
   display: inline-block;
@@ -381,7 +381,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 72%;
   width: 88%;
   margin: 13.5% auto;
-  background-color: #ffffff;
+  background-color: @mWhite;
   z-index: 2;
   overflow: hidden;
 }
@@ -391,7 +391,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 5%;
   width: 25%;
   border-radius: 30px;
-  background-color: #ffffff;
+  background-color: @mWhite;
   margin-top: -5%;
   margin-left: auto;
   margin-right: auto;
@@ -409,7 +409,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 2px;
   width: 20px;
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: @mWhite;
   margin: 6px 10px;
 }
 
@@ -476,11 +476,11 @@ a.forgotPassword, a.didntReceiveEmail {
 
 a:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: @mWhite;
 }
 
 a:hover {
-  color: #ffffff;
+  color: @mWhite;
 }
 
 /* Notify */
@@ -913,7 +913,7 @@ a:hover {
   margin-top: -150px;
   width: 100px;
   height: 150px;
-  border: 10px solid #000000;
+  border: 10px solid @mBlack;
   border-radius: 10px;
   background: #333;
   outline: #444 solid 20px;
@@ -1021,30 +1021,31 @@ a:hover {
   }
 }
 
-h1#aIntroHeader {
-  color: #ffffff;
+#aIntroHeader {
+  color: @mWhite;
   font-size: 2.75em;
-  font-weight: 300;
+  font-weight: 500;
   margin: .3em auto .5em;
   text-align: center;
+  text-shadow: 0 0 40px #ffbab3;
 }
 @media (min-width: 37.5em) {
-  h1#aIntroHeader {
+  #aIntroHeader {
     font-size: 3em;
   }
 }
 
-h1#aIntroDescribe1 {
-  color: #ffffff;
+#aIntroDescribe1 {
+  color: @mBlack;
   font-size: 1.4em;
-  font-weight: 300;
+  font-weight: 450;
   margin: .9em auto .65em;
   text-align: center;
 }
 
 h1#aIntroDescribe2 {
-  color: #ffffff;
-  font-size: 1.3em;
+  color: @mWhite;
+  font-size: 1.25em;
   font-weight: 300;
   margin: .3em auto .5em;
   margin-top: .5em;
@@ -1069,19 +1070,15 @@ h1#aIntroDescribe2 {
 }
 
 p#aIntroGo {
-  color: #004B49;
+  color: @mMidnightBlue;
   font-size: 1.15em;
-  font-weight: 100;
+  font-weight: 450;
   text-align: center;
   padding: .2em;
 }
-p a#aIntroGo {
-  color: #004B49;
-}
-
 
 .aIntroCenter {
-  background: #fff;
+  background: @mWhite;
   border-radius: 50%;
   height: 22em;
   margin: .5em auto;
@@ -1098,7 +1095,7 @@ p a#aIntroGo {
 }
 
 .aIntroPart-1 {
-  background: #191970;
+  background: @mMidnightBlue;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1111,7 +1108,7 @@ p a#aIntroGo {
 }
 
 .aIntroPart-2 {
-  background: #fff;
+  background: @mWhite;
   border-radius: 0.25em;
   display: table;
   left: 50%;
@@ -1126,7 +1123,7 @@ p a#aIntroGo {
   animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1);
 }
 .aIntroPart-2 span {
-  color: #E55D02;
+  color: @mRorange;
   display: table-cell;
   font-weight: 700;
   vertical-align: middle;
@@ -1138,7 +1135,7 @@ p a#aIntroGo {
 }
 
 .aIntroPart-3 {
-  background: #3498DB;
+  background: @phoneBlue;
   border-radius: 0.625em;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1312,57 +1309,57 @@ div.cuteBot {
 
 @-moz-keyframes aPart2 {
   0%, 5% {
-    border: 0.25em solid #3498db;
+    border: 0.25em solid @phoneBlue;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
     width: 3.125em;
   }
   15%, 20% {
-    border: 0 solid #3498db;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 8.125em;
     top: 6.0625em;
     width: 4.75em;
   }
   25%, 30% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 11.25em;
     top: 4.6875em;
     width: 6.875em;
   }
   35%, 40% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 8.125em;
     top: 5.9375em;
     width: 13.5em;
   }
   45%, 50% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 9.375em;
     top: 5.9375em;
     width: 15em;
   }
   55%, 60% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 11.25em;
     top: 4.6875em;
     width: 6.875em;
   }
   70%, 75% {
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
+    border-left: 1px solid @mBlack;
+    border-right: 1px solid @mBlack;
     border-radius: 0.0em;
     height: 12em;
     top: 5.65em;
     width: 4.2em;
   }
   95%, 100%{
-    border: 0.25em solid #3498db;
+    border: 0.25em solid @phoneBlue;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
@@ -1371,57 +1368,57 @@ div.cuteBot {
 }
 @-webkit-keyframes aPart2 {
   0%, 5% {
-    border: 0.25em solid #3498db;
+    border: 0.25em solid @phoneBlue;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
     width: 3.125em;
   }
   15%, 20% {
-    border: 0 solid #3498db;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 8.125em;
     top: 6.0625em;
     width: 4.75em;
   }
   25%, 30% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 11.25em;
     top: 4.6875em;
     width: 6.875em;
   }
   35%, 40% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 8.125em;
     top: 5.9375em;
     width: 13.5em;
   }
   45%, 50% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 9.375em;
     top: 5.9375em;
     width: 15em;
   }
   55%, 60% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 11.25em;
     top: 4.6875em;
     width: 6.875em;
   }
   70%, 75% {
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
+    border-left: 1px solid @mBlack;
+    border-right: 1px solid @mBlack;
     border-radius: 0.0em;
     height: 12em;
     top: 5.60em;
     width: 4.2em;
   }
   95%, 100%{
-    border: 0.25em solid #3498db;
+    border: 0.25em solid @phoneBlue;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
@@ -1430,57 +1427,57 @@ div.cuteBot {
 }
 @keyframes aPart2 {
   0%, 5% {
-    border: 0.25em solid #3498db;
+    border: 0.25em solid @phoneBlue;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
     width: 3.125em;
   }
   15%, 20% {
-    border: 0 solid #3498db;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 8.125em;
     top: 6.0625em;
     width: 4.75em;
   }
   25%, 30% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 11.25em;
     top: 4.6875em;
     width: 6.875em;
   }
   35%, 40% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 8.125em;
     top: 5.9375em;
     width: 13.5em;
   }
   45%, 50% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 9.375em;
     top: 5.9375em;
     width: 15em;
   }
   55%, 60% {
-    border: 0 solid #3498DB;
+    border: 0 solid @phoneBlue;
     border-radius: 0.5em;
     height: 11.25em;
     top: 4.6875em;
     width: 6.875em;
   }
   70%, 75% {
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
+    border-left: 1px solid @mBlack;
+    border-right: 1px solid @mBlack;
     border-radius: 0.0em;
     height: 12em;
     top: 5.60em;
     width: 4.2em;
   }
   95%, 100%{
-    border: 0.25em solid #3498db;
+    border: 0.25em solid @phoneBlue;
     border-radius: 0.5em;
     height: 3.125em;
     top: 9.375em;
@@ -1496,7 +1493,7 @@ div.cuteBot {
     height: 9.375em;
     top: 6.4375em;
     width: 2.5em;
-    background-color: #3498db;
+    background-color: @phoneBlue;
     box-shadow: none;
   }
   15%, 20% {
@@ -1504,8 +1501,8 @@ div.cuteBot {
     height: 11.875em;
     top: 5em;
     width: 6.625em;
-    border: 1px solid #ffffff;
-    background-color: #3498db;
+    border: 1px solid @mWhite;
+    background-color: @phoneBlue;
     box-shadow: none;
   }
   25%, 30% {
@@ -1513,7 +1510,7 @@ div.cuteBot {
     height: 15em;
     top: 3.75em;
     width: 8.75em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   35%, 40% {
@@ -1521,7 +1518,7 @@ div.cuteBot {
     height: 10em;
     top: 5em;
     width: 15em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   45%, 50% {
@@ -1529,7 +1526,7 @@ div.cuteBot {
     height: 11.25em;
     top: 5em;
     width: 16.875em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   55%, 60% {
@@ -1537,8 +1534,8 @@ div.cuteBot {
     height: 15em;
     top: 3.75em;
     width: 8.75em;
-    border: 1px solid #ffffff;
-    background-color: #E55D02;
+    border: 1px solid @mWhite;
+    background-color: @mRorange;
     box-shadow: none;
   }
   70%, 75% {
@@ -1546,8 +1543,8 @@ div.cuteBot {
     height: 11em;
     top: 6em;
     width: 16em;
-    border: 1px solid #000000;
-    background-color: #E55D02;
+    border: 1px solid @mBlack;
+    background-color: @mRorange;
     box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
   }
   95%, 100%{
@@ -1565,7 +1562,7 @@ div.cuteBot {
     height: 9.375em;
     top: 6.4375em;
     width: 2.5em;
-    background-color: #3498db;
+    background-color: @phoneBlue;
     box-shadow: none;
   }
   15%, 20% {
@@ -1573,8 +1570,8 @@ div.cuteBot {
     height: 11.875em;
     top: 5em;
     width: 6.625em;
-    border: 1px solid #ffffff;
-    background-color: #3498db;
+    border: 1px solid @mWhite;
+    background-color: @phoneBlue;
     box-shadow: none;
   }
   25%, 30% {
@@ -1582,7 +1579,7 @@ div.cuteBot {
     height: 15em;
     top: 3.75em;
     width: 8.75em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   35%, 40% {
@@ -1590,7 +1587,7 @@ div.cuteBot {
     height: 10em;
     top: 5em;
     width: 15em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   45%, 50% {
@@ -1598,7 +1595,7 @@ div.cuteBot {
     height: 11.25em;
     top: 5em;
     width: 16.875em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   55%, 60% {
@@ -1606,8 +1603,8 @@ div.cuteBot {
     height: 15em;
     top: 3.75em;
     width: 8.75em;
-    border: 1px solid #ffffff;
-    background-color: #E55D02;
+    border: 1px solid @mWhite;
+    background-color: @mRorange;
     box-shadow: none;
   }
   70%, 75% {
@@ -1615,8 +1612,8 @@ div.cuteBot {
     height: 11em;
     top: 6em;
     width: 16em;
-    border: 1px solid #000000;
-    background-color: #E55D02;
+    border: 1px solid @mBlack;
+    background-color: @mRorange;
     box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
   }
   95%, 100%{
@@ -1634,7 +1631,7 @@ div.cuteBot {
     height: 9.375em;
     top: 6.4375em;
     width: 2.5em;
-    background-color: #3498db;
+    background-color: @phoneBlue;
     box-shadow: none;
   }
   15%, 20% {
@@ -1642,8 +1639,8 @@ div.cuteBot {
     height: 11.875em;
     top: 5em;
     width: 6.625em;
-    border: 1px solid #ffffff;
-    background-color: #3498db;
+    border: 1px solid @mWhite;
+    background-color: @phoneBlue;
     box-shadow: none;
   }
   25%, 30% {
@@ -1651,7 +1648,7 @@ div.cuteBot {
     height: 15em;
     top: 3.75em;
     width: 8.75em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   35%, 40% {
@@ -1659,7 +1656,7 @@ div.cuteBot {
     height: 10em;
     top: 5em;
     width: 15em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   45%, 50% {
@@ -1667,7 +1664,7 @@ div.cuteBot {
     height: 11.25em;
     top: 5em;
     width: 16.875em;
-    border: 1px solid #ffffff;
+    border: 1px solid @mWhite;
     box-shadow: none;
   }
   55%, 60% {
@@ -1675,8 +1672,8 @@ div.cuteBot {
     height: 15em;
     top: 3.75em;
     width: 8.75em;
-    border: 1px solid #ffffff;
-    background-color: #E55D02;
+    border: 1px solid @mWhite;
+    background-color: @mRorange;
     box-shadow: none;
   }
   70%, 75% {
@@ -1684,8 +1681,8 @@ div.cuteBot {
     height: 11em;
     top: 6em;
     width: 16em;
-    border: 1px solid #000000;
-    background-color: #E55D02;
+    border: 1px solid @mBlack;
+    background-color: @mRorange;
     box-shadow: 10px 13px 5px -8px rgba(0,0,0,0.6);
   }
   95%, 100%{
@@ -1700,102 +1697,102 @@ div.cuteBot {
 @-moz-keyframes aCode {
   0%, 5% {
     font-size: 1em;
-    color: #E55D02;
+    color: @mRorange;
   }
   15%, 20% {
     font-size: 1.25em;
-    color: #E55D02;
+    color: @mRorange;
   }
   25%, 30% {
     font-size: 1.55em;
-    color: #E55D02;
+    color: @mRorange;
   }
   35%, 40% {
     font-size: 2.8125em;
-    color: #E55D02;
+    color: @mRorange;
   }
   45%, 50% {
     font-size: 3.4375em;
-    color: #E55D02;
+    color: @mRorange;
   }
   55%, 60% {
     font-size: 2.1875em;
-    color: #E55D02;
+    color: @mRorange;
   }
   70%, 75% {
-    color: #ffffff;
+    color: @mWhite;
   }
   95%, 100%{
    font-size: 1em;
-   color: #E55D02;
+   color: @mRorange;
  }
 }
 
 @keyframes aCode {
   0%, 5% {
     font-size: 1em;
-    color: #E55D02;
+    color: @mRorange;
   }
   15%, 20% {
     font-size: 1.25em;
-    color: #E55D02;
+    color: @mRorange;
   }
   25%, 30% {
     font-size: 1.55em;
-    color: #E55D02;
+    color: @mRorange;
   }
   35%, 40% {
     font-size: 2.8125em;
-    color: #E55D02;
+    color: @mRorange;
   }
   45%, 50% {
     font-size: 3.4375em;
-    color: #E55D02;
+    color: @mRorange;
   }
   55%, 60% {
     font-size: 2.1875em;
-    color: #E55D02;
+    color: @mRorange;
   }
   70%, 75% {
-    color: #ffffff;
+    color: @mWhite;
   }
   95%, 100%{
    font-size: 1em;
-   color: #E55D02;
+   color: @mRorange;
  }
 }
 
 @-webkit-keyframes acode {
   0%, 5% {
     font-size: 1em;
-    color: #E55D02;
+    color: @mRorange;
   }
   15%, 20% {
     font-size: 1.25em;
-    color: #E55D02;
+    color: @mRorange;
   }
   25%, 30% {
     font-size: 1.55em;
-    color: #E55D02;
+    color: @mRorange;
   }
   35%, 40% {
     font-size: 2.8125em;
-    color: #E55D02;
+    color: @mRorange;
   }
   45%, 50% {
     font-size: 3.4375em;
-    color: #E55D02;
+    color: @mRorange;
   }
   55%, 60% {
     font-size: 2.1875em;
-    color: #E55D02;
+    color: @mRorange;
   }
   70%, 75% {
-    color: #ffffff;
+    color: @mWhite;
   }
   95%, 100%{
    font-size: 1em;
-   color: #E55D02;
+   color: @mRorange;
  }
 }
 
