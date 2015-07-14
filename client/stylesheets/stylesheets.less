@@ -327,7 +327,7 @@ a.forgotPassword, a.didntReceiveEmail {
 
 }
 
-#stackRingerRow {
+#stackIntroHeadRow {
   margin-top: 6em;
 }
 
@@ -337,7 +337,7 @@ a.forgotPassword, a.didntReceiveEmail {
   width: 230px;
   border-radius: 50px;
   margin: 20px auto;
-  background-color: #0099FF;
+  background-color: @stackBlue;
   overflow: hidden;
   z-index: 0;
 }
@@ -347,7 +347,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 500px;
   width: 230px;
   left: 45%;
-  background-color: #0099ff;
+  background-color: @stackBlue;
   transform: rotate(20deg);
   z-index: 1;
 }
@@ -656,6 +656,10 @@ a:hover {
 
 }
 
+#msgIntroHeadRow {
+
+}
+
 *,
 *:before,
 *:after {
@@ -894,10 +898,6 @@ a:hover {
 
 }
 
-#loadingRingerRow {
-
-}
-
 .loadingScreen {
 
 }
@@ -989,10 +989,10 @@ a:hover {
 /* Next Play 3 */
 
 #aIntroContainer {
-  background-color: @mBlue;
+  background-color: @mHotBlue;
 }
 
-#aRingerRow {
+#introHeadRow {
   height: 3.5em;
 }
 
@@ -1037,7 +1037,7 @@ a:hover {
 
 #aIntroDescribe1 {
   color: @mBlack;
-  font-size: 1.4em;
+  font-size: 1.45em;
   font-weight: 450;
   margin: .9em auto .65em;
   text-align: center;
@@ -1049,10 +1049,17 @@ h1#aIntroDescribe2 {
   font-weight: 300;
   margin: .3em auto .5em;
   margin-top: .5em;
+  padding: .2em;
   text-align: center;
 }
 
-
+p#aIntroGo {
+  color: @mBlack;
+  font-size: 1.15em;
+  font-weight: 450;
+  text-align: center;
+  padding: .2em;
+}
 @media (min-width: 37.5em) {
   h1#aIntroDescribe {
     font-size: 1.3em;
@@ -1069,13 +1076,7 @@ h1#aIntroDescribe2 {
   font-size: 1.27em;
 }
 
-p#aIntroGo {
-  color: @mMidnightBlue;
-  font-size: 1.15em;
-  font-weight: 450;
-  text-align: center;
-  padding: .2em;
-}
+
 
 .aIntroCenter {
   background: @mWhite;
@@ -1799,16 +1800,23 @@ div.cuteBot {
 /* Next 4 */
 
 /* Main Body */
+
+#stackIntroContainer {
+  background-color: @mDarkBlue1;
+  perspective: 1200px;
+  height: 100%;
+}
+
 .bubbleTxt {
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateY(40deg);
-  width: 300px;
-  height: 300px;
+  width: 18.750em;
+  height: 18.750em;
   transform-style: preserve-3d;
-  perspective: 600px;
+  perspective: 1200px;
   transition: 0.3s;
 }
 
@@ -1819,10 +1827,10 @@ div.cuteBot {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 0 30px 37.5px;
+  border-width: 1.875em 0 1.875em 2.344em;
   position: absolute;
-  right: -36.58536585px;
-  top: 120px;
+  right: -2.286em;
+  top: 7.5em;
   transition: 0.3s;
 }
 
@@ -1831,10 +1839,10 @@ div.cuteBot {
   background-color: rgba(255, 255, 255, 0.4);
   content: "";
   position: absolute;
-  left: -30px;
+  left: -1.875em;
   top: 0;
-  width: 30px;
-  height: 300px;
+  width: 1.875em;
+  height: 18.75em;
   transform-origin: right center;
   transform: rotateY(-90deg);
 }
@@ -1856,9 +1864,4 @@ div.cuteBot {
   line-height: 120%;
 }
 
-body {
-  background-color: @mBlack;
-  background-size: cover;
-  perspective: 1200px;
-}
 
