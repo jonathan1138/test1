@@ -1,4 +1,9 @@
-    * {
+ /*   
+
+
+
+ */
+   * {
    outline: 1px solid red;
    }
 
@@ -993,7 +998,7 @@ a:hover {
 }
 
 #introHeadRow {
-  height: 3.5em;
+  height: 3.0em;
 }
 
 .aOuterIntro {
@@ -1023,7 +1028,7 @@ a:hover {
 
 #aIntroHeader {
   color: @mWhite;
-  font-size: 2.75em;
+  font-size: 2.38em;
   font-weight: 500;
   margin: .3em auto .5em;
   text-align: center;
@@ -1031,26 +1036,38 @@ a:hover {
 }
 @media (min-width: 37.5em) {
   #aIntroHeader {
-    font-size: 3em;
+    font-size: 2.75em;
+    margin: .3em auto .5em;
   }
 }
 
 #aIntroDescribe1 {
   color: @mBlack;
-  font-size: 1.45em;
-  font-weight: 450;
-  margin: .9em auto .65em;
+  font-size: 1.40em;
+  font-weight: 475;
+  margin: .8em .2em .2em .9em;
   text-align: center;
+}
+@media (min-width: 37.5em) {
+  #aIntroDescribe1 {
+    font-size: 1.60em;
+    margin: 1em .auto 1em;
+  }
 }
 
 h1#aIntroDescribe2 {
   color: @mWhite;
-  font-size: 1.25em;
-  font-weight: 300;
-  margin: .3em auto .5em;
-  margin-top: .5em;
+  font-size: 1.30em;
+  font-weight: 350;
+  margin: .3em .4em .4em .5em;
   padding: .2em;
   text-align: center;
+}
+@media (min-width: 37.5em) {
+  h1#aIntroDescribe2 {
+    font-size: 1.5em;
+    margin: 1em .auto 1em;
+  }
 }
 
 p#aIntroGo {
@@ -1058,11 +1075,13 @@ p#aIntroGo {
   font-size: 1.15em;
   font-weight: 450;
   text-align: center;
+  margin: .7em .2em .2em .7em;
   padding: .2em;
 }
 @media (min-width: 37.5em) {
-  h1#aIntroDescribe {
-    font-size: 1.3em;
+  p#aIntroGo {
+  font-size: 1.15em;
+  margin: 1.3em .auto 1em;
   }
 }
 
@@ -1802,48 +1821,63 @@ div.cuteBot {
 /* Main Body */
 
 #stackIntroContainer {
-  background-color: @mTablePurple1;
-  perspective: 1200px;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-#stackIntroHeader{
-    height: 3em;
-    color: @mBlue;
+  background-color: @mTablePurple2;
 }
 
 #stackIntroRow {
+  height: 3.0em;
 }
 
-#stackIntroLeft {
-  
+.stackOuterIntro {
+  display: block;
+  height: 100%;
+  min-height: 43.75em;
+  position: relative;
+  width: 100%;
+  margin-top: -2em;
+}
+@media (max-height: 40em) {
+  .stackOuterIntro {
+    display: block;
+    
+  }
+}
+.stackInnerIntro {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (max-height: 40em) {
+  .stackInnerIntro {
+    display: block;
+  }
 }
 
-#stackIntroRight {
-  
-}
-
-#stackIntroCenter {
-  
-}
-
-#stackIntroFooter {
-  position:fixed;
-  bottom:0;
-  width:100%;
-  height:30px;/* Height of the footer */
-}
-
-
-#introCenterPresentation {
-  height: 300px;
-}
-#stackH1 {
+#stackIntroHeader {
   color: @mWhite;
+  font-size: 2.38em;
+  font-weight: 500;
+  margin: .3em auto .5em;
+  text-align: center;
+  text-shadow: 0 0 40px #ffbab3;
+}
+@media (min-width: 37.5em) {
+  #stackIntroHeader {
+    font-size: 2.75em;
+    margin: .3em auto .5em;
+  }
+}
+
+.stackIntroLeft {
+  background: @mWhite;
+  border-radius: 50%;
+  height: 22em;
+  margin: .5em auto;
+  overflow: hidden;
+  position: relative;
+  width: 22em;
+  margin-top: -10px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5); 
 }
 
 .bubbleTxt {
