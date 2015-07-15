@@ -1,6 +1,6 @@
-  /*  * {
+    * {
    outline: 1px solid red;
-   }*/
+   }
 
 @import "themeColors.import.less";
 @import "fonts.import.less";
@@ -1802,13 +1802,52 @@ div.cuteBot {
 /* Main Body */
 
 #stackIntroContainer {
-  background-color: @mDarkBlue1;
+  background-color: @mTablePurple1;
   perspective: 1200px;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#stackIntroHeader{
+    height: 3em;
+    color: @mBlue;
+}
+
+#stackIntroRow {
+}
+
+#stackIntroLeft {
+  
+}
+
+#stackIntroRight {
+  
+}
+
+#stackIntroCenter {
+  
+}
+
+#stackIntroFooter {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:30px;/* Height of the footer */
+}
+
+
+#introCenterPresentation {
+  height: 300px;
+}
+#stackH1 {
+  color: @mWhite;
 }
 
 .bubbleTxt {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: @mWhite;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1818,11 +1857,12 @@ div.cuteBot {
   transform-style: preserve-3d;
   perspective: 1200px;
   transition: 0.3s;
+  
 }
 
 /* Right Arrow / Pointer */
 .bubbleTxt:before {
-  border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+  border-color: transparent transparent transparent @mWhite;
   content: "";
   width: 0;
   height: 0;
@@ -1832,11 +1872,13 @@ div.cuteBot {
   right: -2.286em;
   top: 7.5em;
   transition: 0.3s;
+ 
 }
 
 /*Left Side Cap */
 .bubbleTxt:after {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: @mWhite;
+  border-color: @mTablePurple2;
   content: "";
   position: absolute;
   left: -1.875em;
