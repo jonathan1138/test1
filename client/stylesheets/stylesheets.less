@@ -108,6 +108,22 @@ pre {
   font-weight: 400;
 }
 
+a:link {
+ color: blue;
+}
+
+a:visited {
+ color: gray;
+}
+
+a:hover, a:focus {
+text-decoration: none;
+}
+
+a:active {
+ font-weight: bold;
+}
+
 /* End Font Setup */
 
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
@@ -325,7 +341,14 @@ a.forgotPassword, a.didntReceiveEmail {
 /* Phone A */
 
 #stackDemoContainer {
-  background-color: @mWhite;
+ 
+  background: -webkit-linear-gradient(90deg, #6441A5 10%, #2a0845 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #6441A5 10%, #2a0845 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #6441A5 10%, #2a0845 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #6441A5 10%, #2a0845 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #6441A5 10%, #2a0845 90%); /* W3C */
+        
+  
 }
 
 .outerStackDemo {
@@ -342,7 +365,7 @@ a.forgotPassword, a.didntReceiveEmail {
   width: 230px;
   border-radius: 50px;
   margin: 20px auto;
-  background-color: @mBlack;
+  background-color: @mWhite;
   overflow: hidden;
   z-index: 0;
 }
@@ -352,7 +375,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 500px;
   width: 230px;
   left: 45%;
-  background-color: @mBlack;
+  background-color: @mLightWhite;
   transform: rotate(20deg);
   z-index: 1;
 }
@@ -362,7 +385,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 9px;
   width: 45px;
   border-radius: 30px;
-  background-color: @mWhite;
+  background-color: @mBlue;
   margin-top: 7%;
   margin-left: 38.5%;
   display: inline-block;
@@ -374,7 +397,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 9px;
   width: 9px;
   border-radius: 50%;
-  background-color: @mWhite;
+  background-color: @mBlue;
   margin-top: 7%;
   margin-left: 12%;
   display: inline-block;
@@ -387,6 +410,8 @@ a.forgotPassword, a.didntReceiveEmail {
   width: 88%;
   margin: 13.5% auto;
   background-color: @mWhite;
+  border-style: solid;
+  border-color: @mBlack;
   z-index: 2;
   overflow: hidden;
 }
@@ -396,7 +421,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 5%;
   width: 25%;
   border-radius: 30px;
-  background-color: @mWhite;
+  background-color: @mBlue;
   margin-top: -5%;
   margin-left: auto;
   margin-right: auto;
@@ -406,7 +431,7 @@ a.forgotPassword, a.didntReceiveEmail {
 .aMenubar {
   height: 25px;
   width: 100%;
-  background-color: #0F2524;
+  background-color: @mLightGray2;
 }
 
 .aMenu-icon {
@@ -414,7 +439,7 @@ a.forgotPassword, a.didntReceiveEmail {
   height: 2px;
   width: 20px;
   border-radius: 2px;
-  background-color: @mWhite;
+  background-color: @sOrange;
   margin: 6px 10px;
 }
 
@@ -995,6 +1020,7 @@ a:hover {
 
 #aIntroContainer {
   background-color: @mHotBlue;
+  height: 100%;
 }
 
 #introHeadRow {
@@ -1932,3 +1958,160 @@ div.cuteBot {
 }
 
 
+/* Next 4 */
+
+#aStackIntroContainer {
+  background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000000);
+  height: 100%;
+}
+
+.stage {
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  perspective: 9999px;
+  transform-style: preserve-3d;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  opacity: 1;
+  transform: rotateY(23deg) rotateX(16deg) translateZ(0);
+
+}
+
+.layer:after {
+  font: 100px/0.65 'Courgette';
+  content: 'Stack\a    pot!';
+  white-space: pre;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  color: whitesmoke;
+  letter-spacing: -2px;
+  text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);
+}
+
+.layer:nth-child(1):after {
+  transform: translateZ(0px);
+}
+
+.layer:nth-child(2):after {
+  transform: translateZ(-2px);
+}
+
+.layer:nth-child(3):after {
+  transform: translateZ(-4px);
+}
+
+.layer:nth-child(4):after {
+  transform: translateZ(-6px);
+}
+
+.layer:nth-child(5):after {
+  transform: translateZ(-8px);
+}
+
+.layer:nth-child(6):after {
+  transform: translateZ(-10px);
+}
+
+.layer:nth-child(7):after {
+  transform: translateZ(-12px);
+}
+
+.layer:nth-child(8):after {
+  transform: translateZ(-14px);
+}
+
+.layer:nth-child(9):after {
+  transform: translateZ(-16px);
+}
+
+.layer:nth-child(10):after {
+  transform: translateZ(-18px);
+}
+
+.layer:nth-child(11):after {
+  transform: translateZ(-20px);
+}
+
+.layer:nth-child(12):after {
+  transform: translateZ(-22px);
+}
+
+.layer:nth-child(13):after {
+  transform: translateZ(-24px);
+}
+
+.layer:nth-child(14):after {
+  transform: translateZ(-26px);
+}
+
+.layer:nth-child(15):after {
+  transform: translateZ(-28px);
+}
+
+.layer:nth-child(16):after {
+  transform: translateZ(-30px);
+}
+
+.layer:nth-child(17):after {
+  transform: translateZ(-32px);
+}
+
+.layer:nth-child(18):after {
+  transform: translateZ(-34px);
+}
+
+.layer:nth-child(19):after {
+  transform: translateZ(-36px);
+}
+
+.layer:nth-child(20):after {
+  transform: translateZ(-38px);
+}
+
+.layer:nth-child(n+10):after {
+  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.25);
+  -moz-text-stroke: 3px rgba(0, 0, 0, 0.25);
+  text-stroke: 3px rgba(0, 0, 0, 0.25);
+}
+
+.layer:nth-child(n+11):after {
+  -webkit-text-stroke: 15px dodgerblue;
+  -moz-text-stroke: 15px dodgerblue;
+  text-stroke: 15px dodgerblue;
+  text-shadow: 6px 0 6px #00366b, 5px 5px 5px #002951, 0 6px 6px #00366b;
+}
+
+.layer:nth-child(n+12):after {
+  -webkit-text-stroke: 15px #0077ea;
+  -moz-text-stroke: 15px #0077ea;
+  text-stroke: 15px #0077ea;
+}
+
+.layer:last-child:after {
+  -webkit-text-stroke: 17px rgba(0, 0, 0, 0.1);
+  -moz-text-stroke: 17px rgba(0, 0, 0, 0.1);
+  text-stroke: 17px rgba(0, 0, 0, 0.1);
+}
+
+.layer:first-child:after {
+  color: @mWhite;
+  text-shadow: none;
+}
+
+.layer:first-letter {
+  color: @mBlack;
+}
