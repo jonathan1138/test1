@@ -12,7 +12,7 @@
 @import "mediaScreenSetups.import.less";
 @import "fullReset.import.less";
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
-@import url(http://fonts.googleapis.com/css?family=Raleway|Open);
+
 
 /* Full reset */
 
@@ -1961,7 +1961,7 @@ div.cuteBot {
 /* Next 4 */
 
 #aStackIntroContainer {
-  background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000000);
+  background-color: #007bff;
   height: 100%;
 }
 
@@ -1989,14 +1989,15 @@ div.cuteBot {
 }
 
 .layer:after {
-  font: 100px/0.65 'Courgette';
-  content: 'Stack\a    pot!';
+  font: 110px/0.65 'pacifico','Kaushan Script';
+  content: 'Stackpot!';
   white-space: pre;
   text-align: center;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 50px;
+  left: -100px;
   color: whitesmoke;
   letter-spacing: -2px;
   text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);
@@ -2089,16 +2090,16 @@ div.cuteBot {
 }
 
 .layer:nth-child(n+11):after {
-  -webkit-text-stroke: 15px dodgerblue;
-  -moz-text-stroke: 15px dodgerblue;
-  text-stroke: 15px dodgerblue;
+  -webkit-text-stroke: 15px @mDarkBlue1;
+  -moz-text-stroke: 15px @mDarkBlue1;
+  text-stroke: 15px @mDarkBlue1;
   text-shadow: 6px 0 6px #00366b, 5px 5px 5px #002951, 0 6px 6px #00366b;
 }
 
 .layer:nth-child(n+12):after {
-  -webkit-text-stroke: 15px #0077ea;
-  -moz-text-stroke: 15px #0077ea;
-  text-stroke: 15px #0077ea;
+  -webkit-text-stroke: 15px @mDarkBlue1;
+  -moz-text-stroke: 15px @mDarkBlue1;
+  text-stroke: 15px @mDarkBlue1;
 }
 
 .layer:last-child:after {
@@ -2107,11 +2108,4 @@ div.cuteBot {
   text-stroke: 17px rgba(0, 0, 0, 0.1);
 }
 
-.layer:first-child:after {
-  color: @mWhite;
-  text-shadow: none;
-}
 
-.layer:first-letter {
-  color: @mBlack;
-}
